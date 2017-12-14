@@ -41,10 +41,10 @@ function showExpired() {
 //sent
 function sent() {
 	global $datetime;
-	$dbaddress = "localhost";
-	$dbuser = "krysti_test";
-	$dbpwd = "test";
-	$dbbase = "krysti_test";
+	$dbaddress = "localhost"; //server
+	$dbuser = "test"; //db user
+	$dbpwd = "test"; // db password
+	$dbbase = "test"; //base
 	$conn = mysqli_connect($dbaddress, $dbuser, $dbpwd, $dbbase);
 	if (!$conn) {
 		die("Connection failed");
